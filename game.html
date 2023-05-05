@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLittleFarm</title>
+    <link rel="stylesheet" href="game_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet"> 
+    <script src="game.js"></script> 
+    <script src="../meteo_projet/meteo.js"></script>
+</head>
+  <body>
+    <div class="other">
+
+
+            <div class="coins">
+                <img src="SD-removebg-preview.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+            <div class="sd">
+                <img src="C-removebg-preview.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+
+
+            <div  class="s">
+                <img src="bourse.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+
+            <div class="infos">
+                <h2 class="date"></h2>
+                <h1 class="temp"></h1>
+
+            </div>
+
+
+
+            <div class="onglets">
+                <div onclick="change_to_meteo()" id="meteo">
+                    <img src="ciel-clair.png" alt="">
+                </div>
+                <div onclick="change_to_market()" id="market">
+                    <img src="street-market.png" alt="">
+                </div>
+                <div onclick="change_to_quetes()" id="quetes">
+                    <img src="point-dexclamation (1).png" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div id="affiche">
+                <div id="affiche_meteo" style="display: none">
+                
+                    <h1 class="weather"></h1> 
+                </div>
+                <div id="affiche_market" style="display: none">
+
+
+
+                    <h2>market</h2>
+
+
+
+                </div>
+                <div id="affiche_quetes" style="display: none">
+
+
+
+                    <h2>quetes</h2>
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="map">
+
+    </div>
+  </body>
+</html>

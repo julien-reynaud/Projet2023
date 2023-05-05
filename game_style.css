@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  height: 100%;
+}
+
+.other {
+  background-color: #ccd5ae;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
+}
+
+.map {
+  background-color: white;
+  grid-column: 2/5;
+  width: 100%;
+}
+
+.coins {
+  grid-row: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sd {
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.s {
+  grid-row: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.barre {
+  width: 190px;
+  height: 30px;
+  background-color: #e9edc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+p,
+h1,
+h2 {
+  color: rgb(123, 123, 123);
+  font-family: "Darumadrop One", cursive;
+  margin: 0;
+}
+
+.onglets {
+  grid-row: 7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #e9edc9;
+}
+
+#affiche {
+  grid-row: 8/14;
+  background-color: #fefae0;
+}
+
+#meteo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#market {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quetes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos {
+  grid-row: 4/7;
+  background-color: #faedcd;
+  border-style: solid;
+  border-color: #d4a373;
+  border-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
