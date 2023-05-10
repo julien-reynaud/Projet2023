@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLittleFarm</title>
+    <link rel="stylesheet" href="game_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet"> 
+    <script src="game.js"></script> 
+    <script src="../meteo_projet/meteo.js"></script>
+</head>
+  <body>
+    <div class="other"> 
+    <!-- barre à côté du jeu -->
+
+            <!-- 3 monnaies -->
+            <div class="coins">
+                <img src="./images/C-removebg-preview.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+            <div class="sd">
+                <img src="./images/SD-removebg-preview.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+
+
+            <div  class="s">
+                <img src="./images/bourse.png" alt="">
+                <div class="barre">
+                    <p>100</p>
+                </div>
+            </div>
+
+
+            <!-- affichage informations (date, meteo) -->
+            <div class="infos">
+                <h2 class="date"></h2>
+                <h1 class="temp"></h1>
+
+            </div>
+
+
+            <!-- partie 3 onglets -->
+            <div class="onglets">
+                <div onclick="change_to_meteo()" id="meteo">
+                    <img src="./images/ciel-clair.png" title="Voir la météo">
+                </div>
+                <div onclick="change_to_market()" id="market">
+                    <img src="./images/street-market.png" title="Acheter du matériel">
+                </div>
+                <div onclick="change_to_quetes()" id="quetes">
+                    <img src="./images/point-dexclamation (1).png" title="Voir les quêtes">
+                </div>
+            </div>
+
+
+
+            <!-- affichage de l'onglet meteo -->
+            <div id="affiche">
+                <div id="affiche_meteo" >
+                    
+                    <h1 id="prev1" class="prevision">ded</h1>
+                    <h1 id="prev2" class="prevision">lol</h1>
+                    <h1 id="prev3" class="prevision">lol</h1>
+                    <h1 id="prev4" class="prevision">lol</h1>
+                    <h1 id="prev5" class="prevision">lol</h1>
+                    <h1 id="prev6" class="prevision">lol</h1>
+                    <h1 id="prev7" class="prevision">lol</h1>
+                    <h1 id="prev8" class="prevision">lol</h1>
+
+
+                </div>
+                <!--  affichage de l'onglet marché  -->
+                <div id="affiche_market" style="display: none">
+
+
+
+                    <h2>market</h2>
+
+
+
+                </div>
+                <!--  affichage de l'onglet quetes  -->
+                <div id="affiche_quetes" style="display: none">
+
+
+
+                    <h2>quetes</h2>
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- partie map -->
+    <div class="map">
+
+    </div>
+  </body>
+</html>
